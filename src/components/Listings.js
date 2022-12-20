@@ -61,14 +61,14 @@ const Listings = () => {
             rating:3
         }
     ]);
-    const Ondes=()=>{
-        setList((<Detail/>));
-    }
+    // const Ondes=()=>{
+    //     setList((<Detail/>));
+    // }
   return (
    <>
-   <div>
+   <div >
     {list.map((lists)=>{
-      return   <Container onClick={Ondes}>
+      return   <Container>
         <Wrap key={lists.id}>
             <Slider {...settings}>
             <ContentImg><img src={lists.img1} alt="img"/></ContentImg>
@@ -79,7 +79,7 @@ const Listings = () => {
             <ContentDes>{lists.des}</ContentDes>
             <ContentRate>{lists.rating}</ContentRate>
         </Wrap>
-        <Wrap onClick={Ondes}>
+        <Wrap >
             <Slider {...settings}>
             <ContentImg><img src={lists.img1} alt="img"/></ContentImg>
             <ContentImg><img src={lists.img2} alt="img"/></ContentImg>
@@ -89,7 +89,7 @@ const Listings = () => {
             <ContentDes>{lists.des}</ContentDes>
             <ContentRate>{lists.rating}</ContentRate>
         </Wrap>
-        <Wrap onClick={Ondes}>
+        <Wrap >
             <Slider {...settings}>
             <ContentImg><img src={lists.img1} alt="img"/> </ContentImg>
             <ContentImg><img src={lists.img2} alt="img"/></ContentImg>
@@ -99,7 +99,7 @@ const Listings = () => {
             <ContentDes>{lists.des}</ContentDes>
             <ContentRate>{lists.rating}</ContentRate>
         </Wrap>
-        <Wrap onClick={Ondes}>
+        <Wrap >
             <Slider {...settings}>
             <ContentImg><img src={lists.img1} alt="img"/></ContentImg>
             <ContentImg><img src={lists.img2} alt="img"/></ContentImg>
@@ -150,12 +150,17 @@ justify-content:center;
 width:250px;
 height:300px;
 object-fit:contain;
+border-radius:15px;
 
 
 img{
     object-fit:contain;
     cursor:pointer;
     display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid #ccc;
+    border-radius:15px;
 }
 `
 

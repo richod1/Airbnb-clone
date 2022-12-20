@@ -5,7 +5,7 @@ import { BsFacebook,BsInstagram } from "react-icons/bs";
 
 function Footer() {
   return (
-    <div>
+    <div >
         <Container>
         <FooterWrapper>
             <FooterRow>

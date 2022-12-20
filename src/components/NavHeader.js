@@ -9,6 +9,7 @@ import { TbBeach, TbWindmill } from "react-icons/tb";
 import { MdOutlineBedroomParent, MdSurfing } from "react-icons/md";
 
 
+
 const NavHeader = () => {
     var settings = {
         dots: true,
@@ -18,7 +19,7 @@ const NavHeader = () => {
         slidesToScroll: 1
       };
   return (
-    <Container>
+    <Container >
         <Content>
        <Slider {...settings}>
        <Icon1><GrKey/>Key</Icon1>
