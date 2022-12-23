@@ -41,6 +41,7 @@ font-style:bold;
 align-items:center;
 justify-content:center;
 cursor:pointer;
+width:100px;
 
 
 
@@ -52,6 +53,7 @@ h2{
   padding:0.4rem;
   border-radius:15px;
   backround:#000;
+
 
   &:hover{
     color:linear-gradient(blue,orange);
